@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input {
+    height: 30px;
+    width: 100px;
+    border: 3px solid crimson;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+/* nav styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    color: crimson;
+    padding-left: 20px;
+}
+
+.search-btn input {
+    border-color: 1px soliid crimson;
+}
+
+.ul-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.button {
+    background-color: white;
+    border: 4px solid crimson;
+    color: crimson;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 37px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: crimson;
+}
+
+.nav__link {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: whitesmoke;
+
+}
+
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    color: crimson;
+
+}
+
+.nav__link a:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+/* */
+
+
+
+/* main-section*/
+
+.main-section {
+    height: 35rem;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: crimson;
+}
+
+.about-img {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .nav__link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .nav__link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+
+
+
+
+img {
+    max-width: 100%;
+    transition: all 0.7s;
+}
+
+.Hover-effect:hover {
+    transform: translateY(-3px) scale(1.01);
+
+}
+
+.Hover-effect:hover img {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 10px 9px 17px -10px rgba(0, 0, 0, 0.28);
+}
+
+h1 {
+    color: crimson;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1 rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.news-container {
+    margin-bottom: 69px;
+    padding: 0 1rem;
+    padding-top: 92px;
+
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+
+
+}
+
+.news-box {
+    transition: all 0.3s;
+
+    color: rgb(29, 25, 25);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.news-box:hover {
+    text-decoration: none;
+    border: 4px solid crimson;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+}
+
+
+
+
+/* #effect ********************** */
+
+.Hover-effect {
+    position: relative;
+}
+
+
+
+.Hover-effect::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: var(--underline-hight);
+    background-color: var(--underline_color);
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.Hover-effect:hover::after {
+    transform: scale(1, 1);
+}
+
+
+
+/* ===============================
+===================================responsive code*/
+
+@media(max-width:34em) {
+
+    .ul-list {
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+
+
+    .news-box {
+        transition: all 0.3s;
+        color: rgb(29, 25, 25);
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+}

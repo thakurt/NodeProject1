@@ -1,0 +1,47 @@
+Goal -- We going to create a news website using API.
+It is a node.Js, Express.Js and ejs project.
+
+1. install express, body-parser, nodemon, axios, ejs, 
+ 
+---------------------folder structure--------------------------
+
+After installing the above 
+
+we have app.js, package.json, packaje.lock.jason, node-module in root folder
+
+then-- we create two more folder one is src and another is public.
+
+      src---This folder contain routes and views folder.
+
+            routes --- It has a news.js file which contain all the possible routes
+            views  --- This folder contain .ejs file or simlly html file
+      
+      public---- This is also know as static folder it conatin your css, js and images
+
+
+
+------------------------app.js-----------------------------------------
+
+
+It is our main file which runs the server 
+  
+we have imported news.js in this file and continue 
+
+
+-------------------news.js-------------------------------------------
+news.js is inside routes folder help us to code in a better way
+In this .js file we defind all the possile routes we could have in our application.
+we import express and store it in newsRouter variable similarly we have done in app.js where we 
+store express inside app.
+
+then we have newsRouter.get method of call back function. Where we will all the news on the home page
+
+await - we know that node js is a event based non blocking IO async. It handel all the http request with using single threaded pool. That's why it is so fast. But await function causes pause to the async function execution until promise is settled
+
+axios- support the promise API
+
+then we have post method which is working with search
+
+--------------
+
+

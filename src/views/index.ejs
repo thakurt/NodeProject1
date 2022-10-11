@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+</body>
+<section class="main-section">
+    <div class="main-section-content">
+        <h1>Welcome to WorldNews</h1><br>
+        <a href="/news" class="button">Click Here</a>
+    </div>
+</section>
+
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLink = document.querySelector('.nav__link');
+
+    hamburger.addEventListener('click', () => {
+        navLink.classList.toggle('hide');
+    });
+</script>
+
+</html>

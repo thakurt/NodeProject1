@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsAPI</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+    <%- include('partials/navbar') %>
+        <div class="news-container ">
+            <div class="news ">
+
+                <% articles.forEach(function(article,index){ %>
+
+                    <% if ((typeof article.url=='object' ) || (typeof article.title=='object' ) || (typeof
+                        article.urlToImage=='object' ) || (typeof article.content=='object' )){ %>
+                        <% } else{ %>
+                            <a href="<%- article.url %>" target="_blank" class="news-box Hover-effect">
+
+                                <img src="<%- article.urlToImage %>" alt="Image">
+                                <h3 style="font-size: 15px;">
+                                    <%- article.title %>
+                                </h3>
+
+
+                                <p style="font-size: 11px;">
+                                    <%- article.content.replace(/<[^>]+>/g, '') %>
+                                </p>
+                                <br>
+                            </a>
+                            <% } %>
+                                <% }) %>
+            </div>
+        </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLink = document.querySelector('.nav__link');
+
+            hamburger.addEventListener('click', () => {
+                navLink.classList.toggle('hide');
+            });
+
+        </script>
+</body>
+
+</html>
