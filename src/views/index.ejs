@@ -10,22 +10,18 @@
 
 <body>
     <%- include('partials/navbar') %>
+        <div class="container">
+            <div class="container-details">
+                <h2 style="color: rgb(99, 96, 97);font-weight: bolder;">WELCOME TO THE WORLD NEWS</h2>
+                <a href="/news" style="font-weight:bolder;font-size: 15px;" class="button">CLICK HERE</a>
+
+            </div>
+           
+        </div>
 </body>
-<section class="main-section">
-    <div class="main-section-content">
-        <h1>Welcome to WorldNews</h1><br>
-        <a href="/news" class="button">Click Here</a>
-    </div>
-</section>
 
 
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLink = document.querySelector('.nav__link');
 
-    hamburger.addEventListener('click', () => {
-        navLink.classList.toggle('hide');
-    });
-</script>
+
 
 </html>

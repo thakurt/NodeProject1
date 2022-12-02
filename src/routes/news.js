@@ -37,6 +37,8 @@ newsRouter.get('/news', async (req, res) => {
     }
 })
 
+
+
 newsRouter.post('/search', async (req, res) => {
     const search = req.body.search
     try {

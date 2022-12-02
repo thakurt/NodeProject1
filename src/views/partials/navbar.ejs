@@ -1,27 +1,33 @@
-<header>
-    <nav class="nav">
-        <a href="/" class="logo">WorldNews</a>
+<link rel="stylesheet" href="/css/nav.css">
 
-        <div class="hamburger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <div class="nav-title">
+            WorldNews
         </div>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 
-        <div class="nav__link hide">
-            <ul class="ul-list">
-                <li><a class="active" href="/">home</a></li>
-                <li><a href="/news">news</a></li>
-                <li><a href="/about">about</a></li>
-                <li>
-                    <form method="POST" action="/search">
-                        <input type="text" placeholder="Search news" class="search-bar" name="search">
+    <div class="nav-links">
+        <a href="/" target="_blank">HOME</a>
+        <a href="/news" target="_blank">NEAWS</a>
+        <a href="/about" target="_blank">ABOUT</a>
+        <a href="#">
+            <form method="POST" action="/search">
+                <input type="text" placeholder="Search news" class="search-bar" name="search">
 
-                    </form>
-                </li>
+            </form>
 
-            </ul>
+        </a>
 
-        </div>
-    </nav>
-</header>
+
+    </div>
+</div>

@@ -6,33 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/aboutus.css">
 </head>
 
 <body>
 
     <%- include('partials/navbar') %>
 
-        <section class="main-section">
-            <div class="main-section-content">
-                <h2>It is all about me My self Sandip Thakur.</h2>
-                <h2>I am a software developer and a full stack developer</h2>
-                <h3>I know Html5 , CSS, JavaScript for frontend</h3>
-                <h3>and Node.js, Epress Js, and mongoDB, ejs for backend</h3>
+
+        <div class="about">
+            <div class="profilepic">
                 <img src="/img/aa.jpg" alt="Sandip" class="about-img">
 
             </div>
+            <div class="profileDetails">
+                <p class="para">
+                    Hello everyone My self Sandip Thakur I am a software <br>
+                    developer or a full stack developer who have done B.Tech <br>
+                    in Informartion Technology I have a preety much good knowledge <br> of web technologies and how they
+                    work and how to build one. CSS, HTML5 <br> and ReactJs I used to developed frontend and on the
+                    other hand NodeJs, <br> ExpressJs for backend and at last mongoDB and SQL for database <br>
 
-        </section>
-        <script>
-            const hamburger = document.querySelector('.hamburger');
-            const navLink = document.querySelector('.nav__link');
+                </p>
 
-            hamburger.addEventListener('click', () => {
-                navLink.classList.toggle('hide');
-            });
+            </div>
 
-        </script>
+        </div>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
 
     <%- include('partials/navbar') %>
         <div class="news-container ">
-            <div class="news ">
+            <div class="news">
 
                 <% articles.forEach(function(article,index){ %>
 
@@ -38,15 +38,6 @@
                                 <% }) %>
             </div>
         </div>
-        <script>
-            const hamburger = document.querySelector('.hamburger');
-            const navLink = document.querySelector('.nav__link');
-
-            hamburger.addEventListener('click', () => {
-                navLink.classList.toggle('hide');
-            });
-
-        </script>
 </body>
 
 </html>
